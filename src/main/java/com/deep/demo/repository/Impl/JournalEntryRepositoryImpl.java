@@ -165,6 +165,36 @@ public class JournalEntryRepositoryImpl implements JournalRepository {
 
     }
 
+    @Override
+    public void saveDownstreamImpactById(Integer identifier, List<Integer> integers) {
+
+    }
+
+    @Override
+    public void deleteJournalById(Integer journalId) {
+
+    }
+
+    @Override
+    public boolean getJournalTempEntry(Map<String, Number> parameters) {
+        return false;
+    }
+
+    @Override
+    public boolean getJournalEntry(Map<String, Number> parameters) {
+        return false;
+    }
+
+    @Override
+    public void updateModifiedJournal(SqlParameterSource parameters) {
+
+    }
+
+    @Override
+    public void saveJournalModificationTable(SqlParameterSource modifiedParameters) {
+
+    }
+
 
     public Page<JournalEntryResponse> findAll(Pageable page, int count){
         Map<String,Number> parameters =Map.of(OFFSET,page.getOffset(),PAGESIZE,page.getPageSize());

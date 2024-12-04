@@ -10,5 +10,6 @@ public class JournalUploadResponse
     private String errorReport;
     private Integer successCount;
     private Integer errorCount;
+    private Integer requestNo;
 
 }

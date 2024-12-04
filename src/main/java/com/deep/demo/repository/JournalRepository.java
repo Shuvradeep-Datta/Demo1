@@ -65,5 +65,15 @@ public interface JournalRepository {
     List<JournalEntryResponse> getJournalEntryById(Map<String, Number> parameters);
 
 
+    void saveDownstreamImpactById(Integer identifier, List<Integer> integers);
 
+    void deleteJournalById(Integer journalId);
+
+    boolean getJournalTempEntry(Map<String, Number> parameters);
+
+    boolean getJournalEntry(Map<String, Number> parameters);
+
+    void updateModifiedJournal(SqlParameterSource parameters);
+
+    void saveJournalModificationTable(SqlParameterSource modifiedParameters);
 }
